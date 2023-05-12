@@ -27,7 +27,7 @@ Display:= data, Options:= "in"
 col:= {}, colw:= ((c1:= 238) +(c2:= 66) +(c3:= 76) +nuffer:= 25)
 col:= ({1 : c1 , 2 : c2 ,3 : c3 , "W" : colw })
 gui,m:New,-dpiscale %titleitem% %Top% +hwndG_hWnd ;+e0x2000000 
-gui,m:Add,Edit,x88 y+0 w161 h25 vQueryText gQuery +E0x8 +hwndedithwnd ;,
+gui,m:Add,Edit,x52 y+4 w183 h30 vQueryText gQuery +E0x8 +hwndedithwnd ;,
 ww:= ("w" . col.w),	wt:=("w" . col.w+4), wz:=col.w
 gui,m:Add,ListView,grid x0 y6 %wW% h600 r20 gLVGlabl vLVGlabl +hwndlvhwnd +e0x00224008, wMsg | Dec | Hex ;w380
 SendMessage,0x1036,0,0x14031,,ahk_id %lvhwnd% ;stylex
